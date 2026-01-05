@@ -4,76 +4,25 @@
 #include <vector>
 #include <algorithm>
 #include "../Common/Types/Date/Date.h"
-#include "../Common/Types/Weight/Weight.h"
 #include "../Common/Types/Temperature/Temperature.h"
-#include "../Common/Types/Grade/Grade.h"
-#include "../Common/Types/Certification/Certification.h"
+
+
+#include "BookMetadata.h"
+#include "RequiredData.h"
+#include "BookTags.h"
 
 class CookGuide
 {
 private:
-
-    int pageCount;
-    std::string author;
-    std::string description;
-    std::string name;
-    std::string seriesName;
-
-    int serialNumber;
-    Date creationDate;
-    
-    Certification certificate;
-    std::string language;
-    std::vector<std::string> topics;
-
-    int difficulty;
-
-    Grade rating;
-    std::vector<std::string> reviews;
-
-    Weight weight;
-    
-    std::vector<std::string> requiredTools;
-    std::vector<std::string> requiredUtensils; 
-    std::vector<std::string> requiredAppliances; 
+    BookMetadata metadata;
+    RequiredData required;
     
     std::vector<std::string> temperatureRanges;
     std::vector<std::string> keyTechniques;
     
     Date masteryTimeHours;
 
-    bool isVegetarian;
-    bool isVegan;
-    bool isGlutenFree;
-    bool isDairyFree;
-    bool isNutFree;
-    bool isLowCarb;
-    bool isKeto;
-    bool isPaleo;
-    bool isSugarFree;
-    bool isLowSodium;
-    bool isHighProtein;
-    bool isOrganicOnly;
-
-    bool hasDigitalVersion;
-    bool hasAudioBook;
-    bool hasVideoTutorials;
-    bool hasMobileApp;
-    bool hasOnlineCourse;
-    bool hasPrintableWorksheets;
-    bool hasShoppingLists;
-    bool hasMealPlanners;
-    bool hasProgressTracker;
-    bool hasCommunityAccess;
-
-    bool isAwardWinning;
-    bool isChefRecommended;
-    bool isCriticallyAcclaimed;
-    bool hasEditorChoice;
-    bool isCustomerFavorite;
-    bool hasMoneyBackGuarantee;
-    bool isEcoFriendly;
-    bool isRecyclable;
+    BookTags tags;
 
 public:
     CookGuide(int pages, const std::string& auth, const std::string& desc,

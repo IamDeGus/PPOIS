@@ -2,10 +2,10 @@
 ### Общая статистика
 
 ```
-Классы: 74
-Поля: 150
-Методы: 302
-Ассоциации: 87
+Классы: 77
+Поля: 153
+Методы: 349
+Ассоциации: 92
 Исключения: 13
 
 ```
@@ -63,40 +63,43 @@ Common/Types/Weight/Measur.h
 18) `PurityHelper`: 0, 2 -> StateOfPurity
 19) `Weight`: 2, 13 -> Measur
 20) `VectorConverter`: 0, 1 -> Base, Derived
-21) `CookGuide`: 50, 56 -> Date, Certification, Weight, Grade
-22) `CookChecker`: 0, 6 -> Recipe, Kitchen, Date, Ingredient, Supplier
-23) `Cooking`: 4, 12 -> Person, Kitchen, CookingBook, Date, Recipe, EdibleUnit, Utensil, Tool, Supplier, StorageUnit
-24) `CookLimits`: 0, 1 -> _
-25) `Management`: 1, 23 -> Cooking, Date, EdibleUnit, Recipe, Ingredient
-26) `EdibleUnit`: 2, 3 -> Temperature
-27) `Ingredient`: 2, 4 -> Date, Weight
-28) `IngredientCalculate`: 0, 2 -> Ingredient, EdibleUnit
-29) `IngredientChecker`: 0, 1 -> Date, Ingredient
-30) `Liquid`: 1, 2 -> _
-31) `Spice`: 2, 2 -> Grade
-32) `Kitchen`: 2, 6 -> KitchenDescription, KitchenUnit
-33) `KitchenUnit`: 1, 3 -> KitchenUnitDescription
-34) `CookUnit`: 1, 1 -> _
-35) `Dishwasher`: 2, 3 -> Utensil, Tool
-36) `Cupboard`: 0, 3 -> Ingredient
-37) `Fridge`: 1, 4 -> Temperature, EdibleUnit
-38) `StorageUnit`: 2, 9 -> T
-39) `StorageChecker`: 0, 1 -> StorageUnit
-40) `ToolStorage`: 0, 0 -> Tool
-41) `UtensilStorage`: 0, 0 -> Utensil
-42) `Person`: 5, 7 -> PersonMetaData, PersonDescription, PersonLimits
-43) `PersonLimits`: 0, 3 -> _
-44) `Chef`: 0, 2 -> _
-45) `Step`: 6, 8 -> Ingredient
-46) `StepChecker`: 0, 6 -> KitchenUnit, Ingredient
-47) `CookingBook`: 2, 7 -> Recipe, CookingBookDescription, Grade
-48) `Recipe`: 3, 4 -> EdibleUnit, Step, RecipeDescription
-49) `RecipeName`: 0, 1 -> _
-50) `Calculate`: 0, 2 -> Recipe
-51) `Supplier`: 4, 5 -> Company, Date, EdibleUnit
-52) `SupplierChecker`: 0, 1 -> Supplier, Date
-53) `Tool`: 2, 5 -> StateOfPurity
-54) `Utensil`: 2, 5 -> StateOfPurity
+21) !!!!!`CookGuide` : 6, 56 -> Date, Temperature, BookMetadata, RequiredData, BookTags
+22) `BookMetadata`: 14, 14 -> Date, Certification, Weight, Grade
+23) `BookTags`: 30, 30 -> _
+24) `RequiredData`: 3, 3 -> _
+25) `CookChecker`: 0, 6 -> Recipe, Kitchen, Date, Ingredient, Supplier
+26) `Cooking`: 4, 12 -> Person, Kitchen, CookingBook, Date, Recipe, EdibleUnit, Utensil, Tool, Supplier, StorageUnit
+27) `CookLimits`: 0, 1 -> _
+28) `Management`: 1, 23 -> Cooking, Date, EdibleUnit, Recipe, Ingredient
+29) `EdibleUnit`: 2, 3 -> Temperature
+30) `Ingredient`: 2, 4 -> Date, Weight
+31) `IngredientCalculate`: 0, 2 -> Ingredient, EdibleUnit
+32) `IngredientChecker`: 0, 1 -> Date, Ingredient
+33) `Liquid`: 1, 2 -> _
+34) `Spice`: 2, 2 -> Grade
+35) `Kitchen`: 2, 6 -> KitchenDescription, KitchenUnit
+36) `KitchenUnit`: 1, 3 -> KitchenUnitDescription
+37) `CookUnit`: 1, 1 -> _
+38) `Dishwasher`: 2, 3 -> Utensil, Tool
+39) `Cupboard`: 0, 3 -> Ingredient
+40) `Fridge`: 1, 4 -> Temperature, EdibleUnit
+41) `StorageUnit`: 2, 9 -> T
+42) `StorageChecker`: 0, 1 -> StorageUnit
+43) `ToolStorage`: 0, 0 -> Tool
+44) `UtensilStorage`: 0, 0 -> Utensil
+45) `Person`: 5, 7 -> PersonMetaData, PersonDescription, PersonLimits
+46) `PersonLimits`: 0, 3 -> _
+47) `Chef`: 0, 2 -> _
+48) `Step`: 6, 8 -> Ingredient
+49) `StepChecker`: 0, 6 -> KitchenUnit, Ingredient
+50) `CookingBook`: 2, 7 -> Recipe, CookingBookDescription, Grade
+51) `Recipe`: 3, 4 -> EdibleUnit, Step, RecipeDescription
+52) `RecipeName`: 0, 1 -> _
+53) `Calculate`: 0, 2 -> Recipe
+54) `Supplier`: 4, 5 -> Company, Date, EdibleUnit
+55) `SupplierChecker`: 0, 1 -> Supplier, Date
+56) `Tool`: 2, 5 -> StateOfPurity
+57) `Utensil`: 2, 5 -> StateOfPurity
 
 ### Тесты
 
