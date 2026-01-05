@@ -63,7 +63,7 @@ Common/Types/Weight/Measur.h
 18) `PurityHelper`: 0, 2 -> StateOfPurity
 19) `Weight`: 2, 13 -> Measur
 20) `VectorConverter`: 0, 1 -> Base, Derived
-21) !!!!!`CookGuide` : 6, 56 -> Date, Temperature, BookMetadata, RequiredData, BookTags
+21) `CookGuide` : 6, 56 -> Date, Temperature, BookMetadata, RequiredData, BookTags
 22) `BookMetadata`: 14, 14 -> Date, Certification, Weight, Grade
 23) `BookTags`: 30, 30 -> _
 24) `RequiredData`: 3, 3 -> _
