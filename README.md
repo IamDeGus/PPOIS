@@ -6,5 +6,5 @@
 - ЛР 2
   - [Кулинария](https://github.com/IamDeGus/PPOIS/tree/lab2)
 - ЛР 3
+  - [Приложение для отслеживания фитнеса](https://github.com/IamDeGus/PPOIS/tree/lab3)
 - ЛР 4
-
